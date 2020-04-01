@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movetouploadbtn"
+        android:text="Upload Image"
+        android:onClick="toupload"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movetodownloadbtn"
+        android:text="Download Image"
+        android:layout_margin="10dp"
+        android:layout_below="@id/movetouploadbtn"
+        android:onClick="todownload"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videouploadbtn"
+        android:text="Uplaod Video"
+        android:layout_margin="10dp"
+        android:layout_below="@id/movetodownloadbtn"
+        android:onClick="touploadVideo"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videodownloadbtn"
+        android:text="Downlaod Video"
+        android:layout_margin="10dp"
+        android:layout_below="@id/videouploadbtn"
+        android:onClick="todownloadVideo"/>
+</RelativeLayout>
